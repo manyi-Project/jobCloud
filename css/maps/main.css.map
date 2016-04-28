@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.scss"],"names":[],"mappings":"AACA,IAAI,CAAA;EACF,KAAK,EAFA,KAAK,GAGX","file":"../main.css","sourcesContent":["$color:green;\r\nbody{\r\n  color: $color;\r\n}"]}
