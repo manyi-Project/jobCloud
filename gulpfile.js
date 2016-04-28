@@ -17,23 +17,17 @@ var minifyCss = require("gulp-minify-css");
 
 //编译sass，标记maps文件
 gulp.task("sass",function(){
-	return  gulp.src(['css/sass/*.scss'])
+	return  gulp.src(['css/sass/*.scss','!css/sass/base.scss'])
+
 			.pipe(sourcemaps.init())
 			.pipe(sass().on('error', sass.logError))
 			.pipe(gulp.dest('./css/style'))
 			.pipe(concat('main.css'))
 			.pipe(sourcemaps.write('./maps'))
+			.pipe(browserSync.stream())
 			.pipe(gulp.dest('./css'));
-});
-//px转换rem
-//gulp.task('px3rem',["sass"],function(){
-//	gulp.src('css/main.css')
-//			.pipe(px3rem({remUnit: 72 }))//转化基值72，不写默认为75
-//			//.pipe(minifyCss())
-//			.pipe(rename('main.merge.css'))//重命名文件
-//			.pipe(gulp.dest('./css'))
-//});
 
+});
 
 //js压缩
 gulp.task('minify-js', function () {
@@ -47,8 +41,8 @@ gulp.task('minify-js', function () {
 gulp.task('browser-sync', function() {
 	var files = [
 		'pages/*.html',
-		'css/**/*.css',
-		'js/*.js'
+		'css/sass/*.scss',
+		'js/src/*.js'
 	];
 	browserSync.init(files,{
 		server: {
@@ -66,7 +60,7 @@ gulp.task('watch', function () {
 
 
 //,'browser-sync'
-gulp.task('default', ['watch']);
+gulp.task('default', ['watch','browser-sync']);
 function errorHandler(error){
 	this.emit('end');
 }

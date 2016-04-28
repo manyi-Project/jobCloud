@@ -1,0 +1,32 @@
+@import 'base.scss';
+html,body{
+  @include square();
+}
+#signIn{
+    @include square();
+    @include background("../images/signIn-bg.png");
+    overflow: hidden;
+    position: relative;
+    .title{
+        @include lineHight();
+        font-size: 36px;
+        color: #FFFFFF;
+        text-align: center;
+        margin: 87px 0 95px 0;
+    }
+    .signIn_box{
+        width: 564px;
+        height: 328px;
+        background-color: #FFFFFF;
+        @include bdr-radius();
+        margin: 0 auto;
+    }
+    .copyright{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        color: #3C3E49;
+        font-size: 14px;
+    }
+}
