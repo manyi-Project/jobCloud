@@ -5,11 +5,51 @@
 	<link rel="stylesheet" href="../css/reset.css"/>
 	<link rel="stylesheet" href="../css/main.css"/>
 	<title>登录</title>
+	<!--[if lte IE 10]>
+	<style>
+		#signIn .user input{
+			width: 260px;
+		}
+	</style>
+	<![endif]-->
 </head>
 <body>
 	<div id="signIn">
 		<h1 class="title">乾坤翰林资源管理后台</h1>
-		<div class="signIn_box"></div>
+		<div class="signIn_box">
+			<form action="">
+				<div class="user">
+					<span class="user_lable">用户名:</span>
+					<input placeholder="请输入用户名" type="text"/>
+					<span class="tips">用户名错误</span>
+				</div>
+				<div class="user">
+					<span class="user_lable">密码:</span>
+					<input placeholder="请输入密码" type="password"/>
+					<span class="tips">密码错误</span>
+				</div>
+				<div class="user">
+					<span class="user_lable">验证码:</span>
+					<input class="last_input" placeholder="请输入验证码" type="text"/>
+					<div class="v_code inline-block"><img src="../images/v-code.png" alt=""/></div>
+					<span class="tips">验证码错误</span>
+				</div>
+				<div class="user">
+					<span class="user_lable"></span>
+					<input class="submit" type="submit" value="确定"/>
+				</div>
+				<div class="clearfix">
+					<span class="user_lable"></span>
+					<div class="password fl">
+						<div class="remember_password fl ie10">
+							<input class="chk_1 fl" type="checkbox"/>
+							<span class="fl">记住密码</span>
+						</div>
+						<a href="javascript:;" class="forget_password fr">忘记密码</a>
+					</div>
+				</div>
+			</form>
+		</div>
 		<div class="copyright">
 			<p>版权信息</p>
 			<p>京ICP备 13013234号</p>

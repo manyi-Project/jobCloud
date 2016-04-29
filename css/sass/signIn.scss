@@ -2,9 +2,21 @@
 html,body{
   @include square();
 }
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #D7D7D7;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #D7D7D7;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #D7D7D7;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #D7D7D7;
+}
 #signIn{
     @include square();
-    @include background("../images/signIn-bg.png");
+    @include background("../images/signIn-bg.png",100% 100%);
     overflow: hidden;
     position: relative;
     .title{
@@ -17,14 +29,77 @@ html,body{
     .signIn_box{
         width: 564px;
         height: 328px;
+        padding: 52px 25px;
+        @include lineHight();
         background-color: #FFFFFF;
         @include bdr-radius();
         margin: 0 auto;
+        .submit{
+            height: 42px;
+            line-height: 42px;
+            @include bdr-radius(5px);
+            color: #FFF;
+            font-size: 16px;
+            background-color: #6d9ee1;
+        }
+    }
+    .user{
+        font-size: 16px;
+        color: #3C3E49;
+        margin-bottom: 22px;
+    }
+    .user_lable{
+        width: 126px;
+        height: 25px;
+        line-height: 25px;
+        text-align: right;
+        float: left;
+        margin-right: 30px;
+    }
+    .user input{
+        width: 264px;
+        height: 25px;
+        border-bottom: 1px solid #ececec;
+    }
+    .user .last_input{
+        width: 148px;
+    }
+    .v_code{
+        width: 95px;
+        height: 35px;
+        margin-top: -12px;
+        margin-left: 13px;
+        @include bdr-radius(3px);
+    }
+    .tips:before{
+        content: '*';
+        color: #df1526;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .tips{
+        color: #6D9EE1;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    .password{
+        width: 264px;
+        font-size: 12px;
+        color: #626266;
+    }
+    .forget_password{
+        text-decoration: underline;
+        font-size: 12px;
+        color: #626266;
+    }
+    .chk_1{
+        margin-right: 10px;
+        margin-top: 2px;
     }
     .copyright{
+        width: 100%;
         position: absolute;
         bottom: 0;
-        left: 0;
         text-align: center;
         color: #3C3E49;
         font-size: 14px;
