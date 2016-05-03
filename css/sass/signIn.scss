@@ -137,11 +137,227 @@ html,body{
 
 //用户管理
 #userManagement{
+    a{
+        color: inherit;
+    }
     height: 100%;
     padding-top: 115px;
+    background-color: #f4f4f4;
+    color: #FFFFFF;
     .common_navber{
         width: 251px;
         height: 100%;
         background-color: #3c3e49;
+    }
+    .nav_bar_time{
+        line-height: 48px;
+        font-size: 16px;
+        text-align: center;
+        border: 1px solid #545665;
+    }
+    .bd_img{
+        background-position: 41px center;
+        background-repeat: no-repeat;
+    }
+    .sub_icon1{
+        background-image: url("../images/admin.png")
+    }
+    .sub_icon2{
+        background-image: url("../images/book.png")
+    }
+    .navbar_inner{
+        line-height: 48px;
+        border-bottom: 1px solid #545665;
+        h3{
+            padding-left: 73px;
+            padding-right: 21px;
+        }
+        .navbar_con{
+            height: 48px;
+            font-size: 14px;
+            color: #6D9EE1;
+            background-color: #292b32;
+            border-top: 1px solid #545665;
+            text-align: center;
+            display: none;
+            p{
+                border-left: 5px solid #6d9ee1;
+            }
+        }
+    }
+    .tips_icon{
+        display: inline-block;
+        width: 14px;
+        height: 48px;
+        background: url("../images/plus.png") center center no-repeat;
+    }
+    .tips_active{
+        background: url("../images/minus.png") center center no-repeat;
+    }
+    .cont_box{
+        width: 100%;
+        height: 100%;
+        padding-left: 266px
+    }
+    .cont_inner{
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+        position: relative;
+    }
+    .welcome_title{
+        line-height: 56px;
+        height: 56px;
+        color: #3C3E49;
+        font-size: 18px;
+        padding-left: 20px;
+        padding-right: 42px;
+    }
+    .prve_time{
+        font-size: 16px;
+    }
+    .add_title{
+        line-height: 53px;
+        height: 53px;
+        font-size: 16px;
+        background-color: #6d9ee1;
+        padding-left: 20px;
+        padding-right: 42px;
+    }
+    .add_user{
+        font-size: 12px;
+        background: url("../images/add-user.png") 0 center no-repeat;
+        padding-left: 25px;
+        color: #FFFFFF;
+    }
+    .result-title{
+        font-size: 14px;
+        color: #6D9EE1;
+        height: 48px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .result-list{
+        font-size: 12px;
+        color: #3C3E49;
+        height: 48px;
+        border-bottom: 1px solid #e5e5e5;
+        td{
+            text-align: center;
+        }
+    }
+    .result-bd{
+        background-color: #e8e9ec;
+    }
+    .pagination{
+        color: #666;
+        font-size: 12px;
+        padding: 20px 19px 36px 0;
+        li{
+            margin-right: 20px;
+            border-radius: 3px;
+            padding: 9px 22px;
+            background-color: #e8e9ec;
+        }
+        .pagination-active{
+            color: #FFFFFF;
+            background-color: #6d9ee1;
+        }
+    }
+    .copyright{
+        width: 954px;
+        border-top: 1px solid #e1e1e1;
+        padding: 22px 0;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        margin-left: -477px;
+        text-align: center;
+        color: #3C3E49;
+        font-size: 14px;
+    }
+    .add_user_alert,.del_alert{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        @include square;
+        background:url("../images/opacity.png") 0 0 repeat;
+    }
+    .addUser_inner{
+        padding: 0 21px;
+        @include bdr-radius(5px);
+        background-color: #fff;
+    }
+    .addUser_title{
+        width: 530px;
+        height: 61px;
+        line-height: 61px;
+        color: #000000;
+        border-bottom: 1px solid #d7d7d7;
+        margin-bottom: 52px;
+    }
+    .del{
+        font-family: cursive;
+        color: #6D9EE1;
+        font-size: 22px;
+    }
+    .user{
+        font-size: 16px;
+        color: #3C3E49;
+        margin-bottom: 30px;
+        input{
+            width: 301px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+    }
+    .user_lable:before{
+        content: '*';
+        color: #df1526;
+        font-size: 14px;
+        margin-right: 14px;
+    }
+    .user_lable,.user_lable1{
+        width: 165px;
+        text-align: right;
+        display: inline-block;
+        margin-right: 6px;
+    }
+    .submit{
+        width: 285px;
+        height: 41px;
+        background-color: #6d9ee1;
+        border-radius: 3px;
+        color: #fff;
+        margin: 26px auto 59px;
+        line-height: 41px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .del_inner{
+        width: 484px;
+        height: 290px;
+        background-color: #FFFFFF;
+        @include bdr-radius(5px);
+        color: #000;
+        font-size: 18px;
+        h3{
+            text-align: center;
+            margin: 76px 0;
+        }
+    }
+    .okORcencle{
+        padding: 0 134px;
+    }
+    .ok,.cencle{
+        color: #FFFFFF;
+        padding: 12px 30px;
+        @include bdr-radius(5px);
+    }
+    .ok{
+        background-color: #6d9ee1;
+    }
+    .cencle{
+        background-color: #c0c2c8;
     }
 }

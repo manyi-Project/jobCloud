@@ -130,8 +130,191 @@ html, body {
 
 #userManagement {
   height: 100%;
-  padding-top: 115px; }
+  padding-top: 115px;
+  background-color: #f4f4f4;
+  color: #FFFFFF; }
+  #userManagement a {
+    color: inherit; }
   #userManagement .common_navber {
     width: 251px;
     height: 100%;
     background-color: #3c3e49; }
+  #userManagement .nav_bar_time {
+    line-height: 48px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #545665; }
+  #userManagement .bd_img {
+    background-position: 41px center;
+    background-repeat: no-repeat; }
+  #userManagement .sub_icon1 {
+    background-image: url("../images/admin.png"); }
+  #userManagement .sub_icon2 {
+    background-image: url("../images/book.png"); }
+  #userManagement .navbar_inner {
+    line-height: 48px;
+    border-bottom: 1px solid #545665; }
+    #userManagement .navbar_inner h3 {
+      padding-left: 73px;
+      padding-right: 21px; }
+    #userManagement .navbar_inner .navbar_con {
+      height: 48px;
+      font-size: 14px;
+      color: #6D9EE1;
+      background-color: #292b32;
+      border-top: 1px solid #545665;
+      text-align: center;
+      display: none; }
+      #userManagement .navbar_inner .navbar_con p {
+        border-left: 5px solid #6d9ee1; }
+  #userManagement .tips_icon {
+    display: inline-block;
+    width: 14px;
+    height: 48px;
+    background: url("../images/plus.png") center center no-repeat; }
+  #userManagement .tips_active {
+    background: url("../images/minus.png") center center no-repeat; }
+  #userManagement .cont_box {
+    width: 100%;
+    height: 100%;
+    padding-left: 266px; }
+  #userManagement .cont_inner {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: relative; }
+  #userManagement .welcome_title {
+    line-height: 56px;
+    height: 56px;
+    color: #3C3E49;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 42px; }
+  #userManagement .prve_time {
+    font-size: 16px; }
+  #userManagement .add_title {
+    line-height: 53px;
+    height: 53px;
+    font-size: 16px;
+    background-color: #6d9ee1;
+    padding-left: 20px;
+    padding-right: 42px; }
+  #userManagement .add_user {
+    font-size: 12px;
+    background: url("../images/add-user.png") 0 center no-repeat;
+    padding-left: 25px;
+    color: #FFFFFF; }
+  #userManagement .result-title {
+    font-size: 14px;
+    color: #6D9EE1;
+    height: 48px;
+    border-bottom: 1px solid #e5e5e5; }
+  #userManagement .result-list {
+    font-size: 12px;
+    color: #3C3E49;
+    height: 48px;
+    border-bottom: 1px solid #e5e5e5; }
+    #userManagement .result-list td {
+      text-align: center; }
+  #userManagement .result-bd {
+    background-color: #e8e9ec; }
+  #userManagement .pagination {
+    color: #666;
+    font-size: 12px;
+    padding: 20px 19px 36px 0; }
+    #userManagement .pagination li {
+      margin-right: 20px;
+      border-radius: 3px;
+      padding: 9px 22px;
+      background-color: #e8e9ec; }
+    #userManagement .pagination .pagination-active {
+      color: #FFFFFF;
+      background-color: #6d9ee1; }
+  #userManagement .copyright {
+    width: 954px;
+    border-top: 1px solid #e1e1e1;
+    padding: 22px 0;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -477px;
+    text-align: center;
+    color: #3C3E49;
+    font-size: 14px; }
+  #userManagement .add_user_alert, #userManagement .del_alert {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: url("../images/opacity.png") 0 0 repeat; }
+  #userManagement .addUser_inner {
+    padding: 0 21px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff; }
+  #userManagement .addUser_title {
+    width: 530px;
+    height: 61px;
+    line-height: 61px;
+    color: #000000;
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 52px; }
+  #userManagement .del {
+    font-family: cursive;
+    color: #6D9EE1;
+    font-size: 22px; }
+  #userManagement .user {
+    font-size: 16px;
+    color: #3C3E49;
+    margin-bottom: 30px; }
+    #userManagement .user input {
+      width: 301px;
+      border-bottom: 1px solid #f0f0f0; }
+  #userManagement .user_lable:before {
+    content: '*';
+    color: #df1526;
+    font-size: 14px;
+    margin-right: 14px; }
+  #userManagement .user_lable, #userManagement .user_lable1 {
+    width: 165px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 6px; }
+  #userManagement .submit {
+    width: 285px;
+    height: 41px;
+    background-color: #6d9ee1;
+    border-radius: 3px;
+    color: #fff;
+    margin: 26px auto 59px;
+    line-height: 41px;
+    text-align: center;
+    font-size: 16px; }
+  #userManagement .del_inner {
+    width: 484px;
+    height: 290px;
+    background-color: #FFFFFF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #000;
+    font-size: 18px; }
+    #userManagement .del_inner h3 {
+      text-align: center;
+      margin: 76px 0; }
+  #userManagement .okORcencle {
+    padding: 0 134px; }
+  #userManagement .ok, #userManagement .cencle {
+    color: #FFFFFF;
+    padding: 12px 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+  #userManagement .ok {
+    background-color: #6d9ee1; }
+  #userManagement .cencle {
+    background-color: #c0c2c8; }
