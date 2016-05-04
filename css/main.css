@@ -1,6 +1,7 @@
 html, body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 ::-webkit-input-placeholder {
   /* WebKit browsers */
@@ -128,36 +129,36 @@ html, body {
     color: #3C3E49;
     font-size: 14px; }
 
-#userManagement {
+.userManagement {
   height: 100%;
   padding-top: 115px;
   background-color: #f4f4f4;
   color: #FFFFFF; }
-  #userManagement a {
+  .userManagement a {
     color: inherit; }
-  #userManagement .common_navber {
+  .userManagement .common_navber {
     width: 251px;
     height: 100%;
     background-color: #3c3e49; }
-  #userManagement .nav_bar_time {
+  .userManagement .nav_bar_time {
     line-height: 48px;
     font-size: 16px;
     text-align: center;
     border: 1px solid #545665; }
-  #userManagement .bd_img {
+  .userManagement .bd_img {
     background-position: 41px center;
     background-repeat: no-repeat; }
-  #userManagement .sub_icon1 {
+  .userManagement .sub_icon1 {
     background-image: url("../images/admin.png"); }
-  #userManagement .sub_icon2 {
+  .userManagement .sub_icon2 {
     background-image: url("../images/book.png"); }
-  #userManagement .navbar_inner {
+  .userManagement .navbar_inner {
     line-height: 48px;
     border-bottom: 1px solid #545665; }
-    #userManagement .navbar_inner h3 {
+    .userManagement .navbar_inner h3 {
       padding-left: 73px;
       padding-right: 21px; }
-    #userManagement .navbar_inner .navbar_con {
+    .userManagement .navbar_inner .navbar_con {
       height: 48px;
       font-size: 14px;
       color: #6D9EE1;
@@ -165,72 +166,72 @@ html, body {
       border-top: 1px solid #545665;
       text-align: center;
       display: none; }
-      #userManagement .navbar_inner .navbar_con p {
+      .userManagement .navbar_inner .navbar_con p {
         border-left: 5px solid #6d9ee1; }
-  #userManagement .tips_icon {
+  .userManagement .tips_icon {
     display: inline-block;
     width: 14px;
     height: 48px;
     background: url("../images/plus.png") center center no-repeat; }
-  #userManagement .tips_active {
+  .userManagement .tips_active {
     background: url("../images/minus.png") center center no-repeat; }
-  #userManagement .cont_box {
+  .userManagement .cont_box {
     width: 100%;
     height: 100%;
     padding-left: 266px; }
-  #userManagement .cont_inner {
+  .userManagement .cont_inner {
     width: 100%;
     height: 100%;
     background-color: #FFFFFF;
     position: relative; }
-  #userManagement .welcome_title {
+  .userManagement .welcome_title {
     line-height: 56px;
     height: 56px;
     color: #3C3E49;
     font-size: 18px;
     padding-left: 20px;
     padding-right: 42px; }
-  #userManagement .prve_time {
+  .userManagement .prve_time {
     font-size: 16px; }
-  #userManagement .add_title {
+  .userManagement .add_title {
     line-height: 53px;
     height: 53px;
     font-size: 16px;
     background-color: #6d9ee1;
     padding-left: 20px;
     padding-right: 42px; }
-  #userManagement .add_user {
+  .userManagement .add_user {
     font-size: 12px;
     background: url("../images/add-user.png") 0 center no-repeat;
     padding-left: 25px;
     color: #FFFFFF; }
-  #userManagement .result-title {
+  .userManagement .result-title {
     font-size: 14px;
     color: #6D9EE1;
     height: 48px;
     border-bottom: 1px solid #e5e5e5; }
-  #userManagement .result-list {
+  .userManagement .result-list {
     font-size: 12px;
     color: #3C3E49;
     height: 48px;
     border-bottom: 1px solid #e5e5e5; }
-    #userManagement .result-list td {
+    .userManagement .result-list td {
       text-align: center; }
-  #userManagement .result-bd {
+  .userManagement .result-bd {
     background-color: #e8e9ec; }
-  #userManagement .pagination {
+  .userManagement .pagination {
     color: #666;
     font-size: 12px;
     padding: 20px 19px 36px 0; }
-    #userManagement .pagination li {
+    .userManagement .pagination li {
       margin-right: 20px;
       border-radius: 3px;
       padding: 9px 22px;
       background-color: #e8e9ec; }
-    #userManagement .pagination .pagination-active {
+    .userManagement .pagination .pagination-active {
       color: #FFFFFF;
       background-color: #6d9ee1; }
-  #userManagement .copyright {
+  .userManagement .copyright {
     width: 954px;
     border-top: 1px solid #e1e1e1;
     padding: 22px 0;
@@ -241,7 +242,7 @@ html, body {
     text-align: center;
     color: #3C3E49;
     font-size: 14px; }
-  #userManagement .add_user_alert, #userManagement .del_alert {
+  .userManagement .add_user_alert, .userManagement .del_alert {
     display: none;
     position: absolute;
     top: 0;
@@ -250,41 +251,41 @@ html, body {
     width: 100%;
     height: 100%;
     background: url("../images/opacity.png") 0 0 repeat; }
-  #userManagement .addUser_inner {
+  .userManagement .addUser_inner {
     padding: 0 21px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
     background-color: #fff; }
-  #userManagement .addUser_title {
+  .userManagement .addUser_title {
     width: 530px;
     height: 61px;
     line-height: 61px;
     color: #000000;
     border-bottom: 1px solid #d7d7d7;
     margin-bottom: 52px; }
-  #userManagement .del {
+  .userManagement .del {
     font-family: cursive;
     color: #6D9EE1;
     font-size: 22px; }
-  #userManagement .user {
+  .userManagement .user {
     font-size: 16px;
     color: #3C3E49;
     margin-bottom: 30px; }
-    #userManagement .user input {
+    .userManagement .user input {
       width: 301px;
       border-bottom: 1px solid #f0f0f0; }
-  #userManagement .user_lable:before {
+  .userManagement .user_lable:before {
     content: '*';
     color: #df1526;
     font-size: 14px;
     margin-right: 14px; }
-  #userManagement .user_lable, #userManagement .user_lable1 {
+  .userManagement .user_lable, .userManagement .user_lable1 {
     width: 165px;
     text-align: right;
     display: inline-block;
     margin-right: 6px; }
-  #userManagement .submit {
+  .userManagement .submit {
     width: 285px;
     height: 41px;
     background-color: #6d9ee1;
@@ -294,7 +295,7 @@ html, body {
     line-height: 41px;
     text-align: center;
     font-size: 16px; }
-  #userManagement .del_inner {
+  .userManagement .del_inner {
     width: 484px;
     height: 290px;
     background-color: #FFFFFF;
@@ -303,20 +304,157 @@ html, body {
     border-radius: 5px;
     color: #000;
     font-size: 18px; }
-    #userManagement .del_inner h3 {
+    .userManagement .del_inner h3 {
       text-align: center;
       margin: 76px 0; }
-  #userManagement .okORcencle {
+  .userManagement .okORcencle {
     padding: 0 134px; }
-  #userManagement .ok, #userManagement .cencle {
+  .userManagement .ok, .userManagement .cencle {
     color: #FFFFFF;
     padding: 12px 30px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px; }
-  #userManagement .ok {
+  .userManagement .ok {
     background-color: #6d9ee1; }
-  #userManagement .cencle {
+  .userManagement .cencle {
     background-color: #c0c2c8; }
+
+.bookList .add_user {
+  background: url("../images/plus.png") 0 center no-repeat; }
+
+.bookList .pirce {
+  color: #e95a66; }
+
+.bookList .link {
+  margin-right: 12px; }
+
+.bookList .select_list {
+  padding: 14px 39px 6px 21px;
+  height: 50px;
+  border-bottom: 1px solid #f4f4f4; }
+
+.bookList .wrapper-dropdown-2 {
+  position: relative;
+  width: 110px;
+  margin-right: 50px;
+  padding: 6px 11px;
+  background-color: #c0c2c8;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px; }
+
+.bookList .active {
+  background-color: #6d9ee1; }
+
+.bookList .wrapper-dropdown-2:after {
+  content: "";
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  margin-top: -3px;
+  background: url("../images/up.png");
+  background-position: inherit;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$url,sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/up.png,sizingMethod='scale')"; }
+
+.bookList .wrapper-dropdown-2.active:after {
+  background: url("../images/down.png");
+  background-position: inherit;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$url,sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/down.png,sizingMethod='scale')"; }
+
+.bookList .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  list-style: none;
+  display: none; }
+  .bookList .dropdown .li {
+    background: #90baf3;
+    text-align: center;
+    line-height: 25px;
+    border-bottom: 1px solid #90bdf8;
+    clear: both; }
+  .bookList .dropdown .liActive {
+    background-color: #6d9ee1; }
+
+.bookList .arrow {
+  float: left;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #90baf3;
+  padding-top: 1px;
+  margin-left: 10px; }
+
+.bookList .serch {
+  width: 253px;
+  height: 28px;
+  background-color: #f4f4f4;
+  border: 1px solid #d7d7d7; }
+
+.bookList .serch {
+  padding-right: 28px; }
+
+.bookList .serchInput {
+  width: 100%;
+  height: 100%;
+  background-color: inherit; }
+
+.bookList .serchButton {
+  width: 28px;
+  height: 28px;
+  margin-right: -28px;
+  background: url("../images/search.png") center center no-repeat; }
+
+.bookList .checkbox-con {
+  color: #3C3E49;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 26px; }
+
+.bookList .checkbox {
+  width: 18px;
+  height: 18px;
+  display: block;
+  float: none;
+  border: 1px solid #DBDBDB;
+  background: #F5F7F9;
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  left: 0; }
+
+.bookList .checkbox-con .cur {
+  border: none;
+  width: 18px;
+  height: 18px;
+  margin-right: 14px;
+  background: url(http://www.w3cways.com/wp-content/uploads/2014/07/1.png) no-repeat; }
+
+.bookList .checkbox-con span {
+  display: inline-block;
+  position: relative;
+  padding-left: 32px; }
+
+.bookList .checkbox-con .ipt-hide {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: none; }
+
+.bookList .submit {
+  width: 92px;
+  height: 42px;
+  margin: 68px auto 50px; }
 
 /*# sourceMappingURL=maps/main.css.map */

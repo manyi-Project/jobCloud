@@ -8,7 +8,7 @@
 	<title>用户管理</title>
 </head>
 <body>
-	<div id="userManagement" class="clearfix">
+	<div class="userManagement clearfix">
 		<div class="common_out">
 			<div class="common_top clearfix">
 				<h3 class="common_title fl">乾坤翰林资源管理中心</h3>
@@ -177,35 +177,5 @@
 		</div>
 	</div>
 </body>
-<script>
-	var $navbarOut = $(".navbar_out");
-	$navbarOut.find('.navbar_con').hide();
-	$navbarOut.find('h3').click(function () {
-		var $tipsThis = $(".tips_icon",this);
-		var next = $(this).nextAll();
-		$tipsThis.toggleClass("tips_active");
-		next.slideToggle('fast');
-		$('.navbar_con').not(next).slideUp('fast');
-		$(".bd_img").find(".tips_icon").not($tipsThis).removeClass("tips_active");
-		return false;
-	});
-
-	$(".result-list").hover(function(){
-		$(this).toggleClass("result-bd");
-	});
-
-	$(".add_user").click(function(){
-		$(".add_user_alert").fadeIn();
-	});
-	$(".del").click(function(){
-		$(".add_user_alert").fadeOut();
-	})
-
-	$(".link-del").click(function(){
-		$(".del_alert").fadeIn();
-	});
-	$(".cencle").click(function(){
-		$(".del_alert").fadeOut();
-	})
-</script>
+<script src="../js/minJs/index.min.js"></script>
 </html>

@@ -1,6 +1,7 @@
 @import 'base.scss';
 html,body{
   @include square();
+    overflow: hidden;
 }
 ::-webkit-input-placeholder { /* WebKit browsers */
     color: #D7D7D7;
@@ -136,7 +137,7 @@ html,body{
 }
 
 //用户管理
-#userManagement{
+.userManagement{
     a{
         color: inherit;
     }
@@ -359,5 +360,131 @@ html,body{
     }
     .cencle{
         background-color: #c0c2c8;
+    }
+}
+
+//教辅图书列表
+.bookList{
+    .add_user{
+        background:url("../images/plus.png") 0 center no-repeat;
+    }
+    .pirce{
+        color: #e95a66;
+    }
+    .link{
+        margin-right: 12px;
+    }
+    .select_list{
+        padding: 14px 39px 6px 21px;
+        height: 50px;
+        border-bottom:1px solid #f4f4f4;
+    }
+    .wrapper-dropdown-2{
+        position: relative;
+        width: 110px;
+        margin-right: 50px;
+        padding: 6px 11px;
+        background-color: #c0c2c8;
+        cursor: pointer;
+        outline: none;
+        font-size: 14px;
+    }
+    .active{
+        background-color: #6d9ee1;
+    }
+    .wrapper-dropdown-2:after{
+        content: "";
+        position: absolute;
+        right: 9px;
+        top: 50%;
+        width: 6px;
+        height: 6px;
+        margin-top: -3px;
+        @include background("../images/up.png",contain);
+    }
+    .wrapper-dropdown-2.active:after {
+        @include background("../images/down.png",contain);
+    }
+    .dropdown{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        list-style: none;
+        display: none;
+        .li{
+            background: #90baf3;
+            text-align: center;
+            line-height: 25px;
+            border-bottom: 1px solid #90bdf8;
+            clear: both;
+        }
+        .liActive{
+            background-color: #6d9ee1;
+        }
+    }
+    .arrow{
+        float: left;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid #90baf3;
+        padding-top: 1px;
+        margin-left: 10px;
+    }
+    .serch{
+        width: 253px;
+        height: 28px;
+        background-color: #f4f4f4;
+        border: 1px solid #d7d7d7;
+    }
+    .serch{
+        padding-right: 28px;
+    }
+    .serchInput{
+        width: 100%;
+        height: 100%;
+        background-color: inherit;
+    }
+    .serchButton{
+        @include square(28px);
+        margin-right: -28px;
+        background: url("../images/search.png") center center no-repeat;
+    }
+    .checkbox-con{
+        color: #3C3E49;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 26px;
+    }
+    .checkbox{
+        width: 18px;
+        height: 18px;
+        display: block;
+        float: none;
+        border:1px solid #DBDBDB;
+        background: #F5F7F9;
+        cursor: pointer;
+        position: absolute;
+        top: 2px;
+        left: 0;}
+    .checkbox-con .cur{
+        border:none;
+        width: 18px;
+        height: 18px;
+        margin-right: 14px;
+        background:url(http://www.w3cways.com/wp-content/uploads/2014/07/1.png) no-repeat;}
+    .checkbox-con span{
+        display: inline-block;
+        position: relative;
+        padding-left: 32px;}
+    .checkbox-con .ipt-hide{
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: none;}
+    .submit{
+        width: 92px;
+        height: 42px;
+        margin: 68px auto 50px;
     }
 }
