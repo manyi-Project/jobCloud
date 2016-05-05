@@ -2,6 +2,7 @@
 html,body{
   @include square();
     overflow: hidden;
+    background-color: #f4f4f4;
 }
 ::-webkit-input-placeholder { /* WebKit browsers */
     color: #D7D7D7;
@@ -42,7 +43,14 @@ html,body{
         margin-right: 12px;
     }
 }
-
+.copyright{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #3C3E49;
+    font-size: 14px;
+}
     //登录样式
 #signIn{
     @include square();
@@ -126,24 +134,12 @@ html,body{
         margin-right: 10px;
         margin-top: 2px;
     }
-    .copyright{
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-        color: #3C3E49;
-        font-size: 14px;
-    }
 }
 
 //用户管理
 .userManagement{
-    a{
-        color: inherit;
-    }
     height: 100%;
     padding-top: 115px;
-    background-color: #f4f4f4;
     color: #FFFFFF;
     .common_navber{
         width: 251px;
@@ -276,7 +272,7 @@ html,body{
         color: #3C3E49;
         font-size: 14px;
     }
-    .add_user_alert,.del_alert{
+    .add_user_alert,.del_alert,.suitName_alert{
         display: none;
         position: absolute;
         top: 0;
@@ -486,5 +482,150 @@ html,body{
         width: 92px;
         height: 42px;
         margin: 68px auto 50px;
+    }
+    .suitName_inner{
+        width: 571px;
+        height: 280px;
+        padding: 0 180px;
+        h3{
+            font-weight: bold;
+            margin: 76px 0 25px 0;
+        }
+        input{
+            width: 210px;
+            border-bottom: 1px solid #d7d7d7;
+        }
+        .complete{
+            width: 88px;
+            height: 42px;
+            margin: 0 auto;
+        }
+        .okORcencle{
+            margin-top: 50px;
+            padding: 0 57px;
+        }
+    }
+}
+
+//找回密码
+.findPassword{
+    .title{
+        padding: 0 40px;
+        height: 100px;
+        background-color: #3c3e49;
+        font-size: 24px;
+        color: #F2F2F2;
+        span{
+            line-height: 100px;
+        }
+    }
+    .stepNumb{
+        padding: 28px 42px;
+        font-size: 18px;
+        color: #3c3e49;
+        line-height: 100%;
+    }
+    .stepTips{
+        text-align: center;
+    }
+    .step{
+        width: 46px;
+        height: 46px;
+        text-align: center;
+        line-height: 46px;
+        font-size: 18px;
+        color: #fff;
+        @include background("../images/circle2.png",contain);
+        position: relative;
+        overflow: inherit;
+    }
+    .stepFont{
+        width: 72px;
+        position: absolute;
+        left: -13px;
+        top: 100%;
+        color: #C0C2C8;
+    }
+    .stepFontActive{
+        color: #73a2e2;
+    }
+    .stepActive{
+        background: url("../images/circle1.png") 0 0 no-repeat;
+        background-size: contain;
+    }
+    .line{
+        width: 196px;
+        height: 4px;
+        background-color: #c0c2c8;
+    }
+    .lineActive{
+        background-color: #4a90e2;
+    }
+    .fromBox{
+        width: 591px;
+        margin: 100px auto 0;
+    }
+    .userName{
+        width: 124px;
+        text-align: right;
+        font-size: 16px;
+        color: #3C3E49;
+    }
+    .hors{
+        margin-bottom: 10px;
+    }
+    .userInput{
+        width: 338px;
+        height: 48px;
+        line-height: 48px;
+        padding-left: 10px;
+        font-size: 16px;
+        border: 1px solid #d7d7d7;
+        background-color: #f4f4f4;
+        @include bdr-radius(4px);
+    }
+    .codeIpt{
+        width: 188px;
+        margin-right: 12px;
+    }
+    .v_code{
+        width: 129px;
+        height: 48px;
+        overflow: hidden;
+        margin-top: -2px;
+        border: 1px solid #d7d7d7;
+        @include bdr-radius(4px);
+    }
+    .v_code2{
+        font-size: 14px;
+        color: #9B9B9B;
+        text-align: center;
+        line-height: 48px;
+    }
+    .nextStep{
+        color: #FFFFFF;
+        background-color: #6d9ee1;
+    }
+    .next{
+        margin-top: 54px;
+    }
+    .tips{
+        width: 113px;
+        color: #6D9EE1;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    .tips:before {
+        content: '*';
+        color: #df1526;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .copyright{
+        width: 1233px;
+        border-top: 1px solid #d7d7d7;
+        padding-top: 20px;
+        left: 50%;
+        margin-left: -616px;
     }
 }

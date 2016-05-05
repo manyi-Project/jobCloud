@@ -23,7 +23,7 @@ small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正�
 ul, ol { list-style: none; }
 
 /* 重置文本格式元素 */
-a { text-decoration: none; }
+a { text-decoration: none;color: inherit; }
 a:hover { text-decoration: none; }
 a{
 	-webkit-tap-highlight-color:rgba(255,255,255,0)
@@ -74,6 +74,7 @@ hr {
 /*.clearfix{display: block; display: table; *display: inline-block; _height: 1%;}/!*清浮动*!/*/
 /*.clearfix:after {content:'\20'; display:block; clear:both;}/!*清浮动*!/*/
 .clearself{ overflow:hidden; _overflow:visible; _height:1%;}
+.inline-block-parent{font-size: 0;word-spacing: -1px;}
 .inline-block{display:inline-block;*zoom: 1;*display: inline;vertical-align:middle;overflow:hidden;}
 .justify{ text-align: justify; text-justify: inter-ideograph;}
 .clear { font-size: 0; height: 0; line-height: 0; overflow: hidden; clear: both;}

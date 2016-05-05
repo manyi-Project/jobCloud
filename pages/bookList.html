@@ -180,7 +180,7 @@
 								《开心蛙状元作业》
 							</span>
 						</div>
-						<div class="submit">
+						<div id="next" class="submit">
 							下一步
 							<input hidden type="submit" value="下一步"/>
 						</div>
@@ -193,6 +193,15 @@
 					<div class="okORcencle clearself">
 						<div class="ok fl">确定</div>
 						<div class="cencle fr">取消</div>
+					</div>
+				</div>
+			</div>
+			<div class="suitName_alert">
+				<div class="del_inner suitName_inner verLRCenter">
+					<h3>请输入关联图书套装名:</h3>
+					<input type="text"/>
+					<div class="okORcencle clearself">
+						<div id="complete" class="ok">完成</div>
 					</div>
 				</div>
 			</div>
@@ -243,13 +252,12 @@
 		});
 
 		$('.checkbox').on('click',function(){
-			if($(this).siblings("input[type='checkbox']").is(':checked')){
+			if($(this).siblings("input[type='checkbox']").prop("checked")){
 				$(this).removeClass('cur');
-				$(this).siblings("input[type='checkbox']").removeAttr('checked')
-			}
-			else{
+				$(this).siblings("input[type='checkbox']").prop("checked",false);
+			}else{
 				$(this).addClass('cur');
-				$(this).siblings("input[type='checkbox']").attr('checked','checked')
+				$(this).siblings("input[type='checkbox']").prop("checked",true);
 			}
 		});
 	});
@@ -257,6 +265,15 @@
 $(".relatedBooks").click(function(){
 	$(".add_user_alert").fadeIn();
 });
+
+	$("#next").click(function(){
+		$(".add_user_alert").fadeOut(function(){
+			$(".suitName_alert").fadeIn();
+		})
+	})
+	$("#complete").click(function(){
+		$(".suitName_alert").fadeOut();
+	});
 
 
 </script>
