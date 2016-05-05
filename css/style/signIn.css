@@ -601,3 +601,98 @@ html, body {
   padding-top: 20px;
   left: 50%;
   margin-left: -616px; }
+
+.uploadBook .add_user {
+  background: url("../images/look.png") 0 center no-repeat; }
+
+.uploadBook .stepNumb {
+  padding: 28px 42px;
+  font-size: 18px;
+  color: #3c3e49;
+  line-height: 100%; }
+
+.uploadBook .stepTips {
+  text-align: center; }
+
+.uploadBook .step {
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  font-size: 18px;
+  color: #fff;
+  background: url("../images/circle2.png");
+  background-position: inherit;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$url,sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/circle2.png,sizingMethod='scale')";
+  position: relative;
+  overflow: inherit; }
+
+.uploadBook .stepFont {
+  width: 72px;
+  position: absolute;
+  left: -13px;
+  top: 100%;
+  color: #C0C2C8; }
+
+.uploadBook .stepFontActive {
+  color: #73a2e2; }
+
+.uploadBook .stepActive {
+  background: url("../images/circle1.png") 0 0 no-repeat;
+  background-size: contain; }
+
+.uploadBook .line {
+  width: 196px;
+  height: 4px;
+  background-color: #c0c2c8; }
+
+.uploadBook .lineActive {
+  background-color: #4a90e2; }
+
+.uploadBook .fromBox {
+  width: 591px;
+  margin: 100px auto 0; }
+
+.uploadBook .stepF1 {
+  width: 108px;
+  left: -31px; }
+
+.uploadBook .bookCover {
+  width: 876px;
+  margin: 104px auto 0; }
+  .uploadBook .bookCover li {
+    width: 212px;
+    margin: 0 40px; }
+  .uploadBook .bookCover .title {
+    font-size: 18px;
+    color: #3C3E49;
+    line-height: 100%; }
+
+.uploadBook .cover {
+  height: 252px;
+  background-color: #006600;
+  margin: 15px 0; }
+
+.uploadBook .file {
+  width: 110px;
+  height: 42px;
+  margin: 0 auto;
+  position: relative;
+  background: #6D9EE1;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 42px; }
+
+.uploadBook .file input {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0; }
