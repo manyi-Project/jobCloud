@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/reset.css"/>
+	<link rel="stylesheet" href="../css/main.css"/>
+	<script src="../js/minJs/jquery-1.11.3.min.js"></script>
+	<title>教辅图书列表</title>
+</head>
+<body>
+<div class="userManagement uploadBook clearfix ">
+	<div class="common_out">
+		<div class="common_top clearfix">
+			<h3 class="common_title fl">乾坤翰林资源管理中心</h3>
+			<div class="common_userName fr">用户名：<span>哈士奇</span>
+				<a class="common_signOut" href="javascript:;">退出</a>
+			</div>
+		</div>
+	</div>
+	<div class="common_navber fl">
+		<div class="navbar_out">
+			<div class="nav_bar_time">
+				2016-5-3
+			</div>
+			<div class="navbar_inner">
+				<h3 class="sub_icon1 bd_img">
+					用户管理
+					<span class="tips_icon fr"></span>
+				</h3>
+				<div class="navbar_con"><p>用户查看</p></div>
+			</div>
+			<div class="navbar_inner">
+				<h3 class="sub_icon2 bd_img">
+					图书编辑器
+					<span class="tips_icon fr"></span>
+				</h3>
+				<div class="navbar_con"><p>教辅图书列表</p></div>
+			</div>
+		</div>
+	</div>
+	<div class="cont_box cont_boxH2">
+		<div class="cont_inner">
+			<div class="add_title clearself">
+				<span class="fl">位置：教辅图书列表</span>
+				<a href="javascript:;" class="add_user fr">查看教辅图书</a>
+			</div>
+			<div class="stepNumb">
+				2、上传图书
+			</div>
+			<div class="stepTips inline-block-parent">
+				<div class="step stepActive inline-block">1<div class="stepFont stepF1 stepFontActive">添加图书信息</div></div>
+				<div class="line lineActive inline-block"></div>
+				<div class="step stepActive inline-block">2<div class="stepFont stepFontActive">上传图书</div></div>
+				<div class="line lineActive inline-block"></div>
+				<div class="step inline-block">3<div class="stepFont stepF1">设置图书价格</div></div>
+			</div>
+			<div class="upload">
+				<span class="inline-block">上传PDF:</span>
+				<div class="uploadInput inline-block">
+					<div class="file fr">浏览
+						<input type="file" name="">
+					</div>
+				</div>
+			</div>
+			<div class="book_box"></div>
+			<div class="nextStep">
+				确定
+			</div>
+			<div class="copyright">
+				<p>版权信息</p>
+				<p>京ICP备 13013234号</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="../js/minJs/index.min.js"></script>
+<script>
+	function DropDown(el) {
+		this.dd = el;
+		this.initEvents();
+	}
+	DropDown.prototype = {
+		initEvents : function() {
+			var obj = this;
+			obj.dd.on('click', function(event){
+				var that = this;
+				$(that).addClass("active");
+				$(".li",that).on({
+					mouseover:function(){
+						$(this).addClass("liActive");
+					},
+					mouseout:function(){
+						$(this).removeClass("liActive");
+					},
+					click:function(){
+						var optionValue = $(this).html();
+						$(".avctiveVal",that).text(optionValue);
+					}
+				});
+				$(".dropdown",that).stop().slideToggle(500);
+				$(that).siblings().find(".dropdown").slideUp("fast",function(){
+					$(that).siblings().removeClass("active");
+				});
+				event.stopPropagation(500);
+			});
+		}
+	};
+	$(function() {
+		var dd1 = new DropDown($('#dd1'));
+		var dd2 = new DropDown($('#dd2'));
+		var dd3 = new DropDown($('#dd3'));
+		var dd4 = new DropDown($('#dd4'));
+		var dd5 = new DropDown($('#dd5'));
+		$(document).click(function () {
+			$('.wrapper-dropdown-2 .dropdown').slideUp(500);
+			$('.wrapper-dropdown-2').removeClass("active");
+		});
+	})
+</script>
+</html>

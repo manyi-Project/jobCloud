@@ -1,7 +1,7 @@
+@charset "UTF-8";
 html, body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
   background-color: #f4f4f4; }
 
 ::-webkit-input-placeholder {
@@ -180,7 +180,8 @@ html, body {
     padding-left: 266px; }
   .userManagement .cont_inner {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
     background-color: #FFFFFF;
     position: relative; }
   .userManagement .welcome_title {
@@ -222,7 +223,7 @@ html, body {
     color: #666;
     font-size: 12px;
     padding: 20px 19px 36px 0; }
-    .userManagement .pagination li {
+    .userManagement .pagination a {
       margin-right: 20px;
       border-radius: 3px;
       padding: 9px 22px;
@@ -520,8 +521,13 @@ html, body {
   color: #73a2e2; }
 
 .findPassword .stepActive {
-  background: url("../images/circle1.png") 0 0 no-repeat;
-  background-size: contain; }
+  background: url("../images/circle1.png");
+  background-position: inherit;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$url,sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/circle1.png,sizingMethod='scale')"; }
 
 .findPassword .line {
   width: 196px;
@@ -601,6 +607,12 @@ html, body {
   padding-top: 20px;
   left: 50%;
   margin-left: -616px; }
+
+.uploadBook .cont_boxH1 {
+  height: 158%; }
+
+.uploadBook .cont_boxH2 {
+  height: 106%; }
 
 .uploadBook .add_user {
   background: url("../images/look.png") 0 center no-repeat; }
@@ -696,3 +708,242 @@ html, body {
   right: 0;
   top: 0;
   opacity: 0; }
+
+.uploadBook .input_group {
+  width: 1100px;
+  margin: 13px auto 0; }
+
+.uploadBook .input_line {
+  margin-bottom: 40px; }
+  .uploadBook .input_line .input_font {
+    width: 244px;
+    text-align: right;
+    font-size: 18px;
+    color: #3C3E49; }
+  .uploadBook .input_line input {
+    width: 420px;
+    border-bottom: 1px solid #979797; }
+  .uploadBook .input_line .tips {
+    font-size: 12px;
+    color: #4A4A4A; }
+  .uploadBook .input_line .tips:before {
+    content: '.';
+    color: #6d9ee1;
+    font-size: 45px;
+    margin-right: -10px; }
+
+.uploadBook .select_list {
+  padding: 0 39px 6px 0;
+  height: 50px; }
+
+.uploadBook .wrapper-dropdown-2 {
+  position: relative;
+  width: 110px;
+  margin-right: 20px;
+  padding: 6px 11px;
+  background-color: #c0c2c8;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px; }
+
+.uploadBook .active {
+  background-color: #6d9ee1; }
+
+.uploadBook .avctiveVal {
+  font-size: 14px; }
+
+.uploadBook .wrapper-dropdown-2:after {
+  content: "";
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  margin-top: -3px;
+  background: url("../images/up.png");
+  background-position: inherit;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$url,sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/up.png,sizingMethod='scale')"; }
+
+.uploadBook .wrapper-dropdown-2.active:after {
+  background: url("../images/down.png");
+  background-position: inherit;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$url,sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/down.png,sizingMethod='scale')"; }
+
+.uploadBook .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: none; }
+  .uploadBook .dropdown .li {
+    background: #90baf3;
+    text-align: center;
+    line-height: 25px;
+    border-bottom: 1px solid #90bdf8;
+    clear: both; }
+  .uploadBook .dropdown .liActive {
+    background-color: #6d9ee1; }
+
+.uploadBook .arrow {
+  float: left;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #90baf3;
+  padding-top: 1px;
+  margin-left: 10px; }
+
+.uploadBook .nextStep {
+  width: 110px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #C0C2C8;
+  margin: 70px auto 145px; }
+
+.uploadBook .uploadInput {
+  width: 403px;
+  height: 44px;
+  border: 1px solid #d7d7d7; }
+
+.uploadBook .upload {
+  margin-top: 110px;
+  text-align: center; }
+  .uploadBook .upload span {
+    font-size: 18px;
+    color: #3C3E49; }
+
+.uploadBook .file {
+  width: 78px; }
+
+.uploadBook .book_box_out {
+  height: 270px;
+  margin-top: 75px;
+  text-align: center;
+  font-size: 0;
+  word-spacing: -1px; }
+
+.uploadBook .book_box {
+  width: 227px;
+  height: 270px;
+  border: 1px solid #d7d7d7;
+  margin: 41px auto 21px;
+  background-color: #d8d8d8; }
+
+.uploadBook .book_box3 {
+  margin: 0 16px 0 40px; }
+
+.uploadBook .book_des {
+  width: 405px;
+  height: 270px;
+  font-size: 14px;
+  color: #6F7074;
+  text-align: left; }
+  .uploadBook .book_des h3 {
+    font-size: 16px;
+    color: #3C3E49;
+    margin-bottom: 14px; }
+
+.uploadBook .setPrick_out {
+  padding: 0 19px; }
+
+.uploadBook .setPrice_title {
+  border-bottom: 1px solid #6D9EE1;
+  font-size: 14px;
+  color: #3C3E49;
+  padding-bottom: 14px; }
+  .uploadBook .setPrice_title span:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 14px;
+    background: url("../images/Oval.png");
+    background-position: inherit;
+    background-repeat: no-repeat;
+    -webkit-background-size: content;
+    background-size: content;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$url,sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/Oval.png,sizingMethod='scale')"; }
+
+.uploadBook .bookPage {
+  width: 1020px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.uploadBook .bookpages {
+  margin: 30px 0 19px 0;
+  font-size: 0;
+  word-spacing: -1px; }
+  .uploadBook .bookpages h3 {
+    color: #3C3E49;
+    font-size: 14px;
+    margin-right: 20px; }
+  .uploadBook .bookpages span {
+    margin-right: 20px;
+    padding-bottom: 10px;
+    color: #3C3E49;
+    font-size: 14px; }
+  .uploadBook .bookpages .act {
+    color: #6d9ee1;
+    border-bottom: 1px solid #6D9EE1; }
+
+.uploadBook .bookpage_ul {
+  width: 1060px;
+  color: #3C3E49;
+  font-size: 14px; }
+  .uploadBook .bookpage_ul li {
+    width: 227px;
+    margin-right: 37px;
+    margin-bottom: 40px; }
+
+.uploadBook .box_book {
+  height: 270px;
+  border: 1px solid #D7D7D7;
+  background-color: #F4F4F4; }
+
+.uploadBook .pirce {
+  margin: 14px 0; }
+
+.uploadBook .UnitPrice {
+  display: none;
+  color: #df002c; }
+
+.uploadBook .setprice {
+  width: 47px;
+  border-bottom: 1px solid #39393c; }
+
+.uploadBook .pric:after {
+  content: '元';
+  color: #39393c;
+  font-size: 14px; }
+
+.uploadBook .set {
+  float: right;
+  width: 95px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  background: #6D9EE1;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  color: #FFFFFF; }
+
+.uploadBook .setActive {
+  background-color: #C0C2C8; }
+
+.uploadBook .comp {
+  margin-top: 30px; }
