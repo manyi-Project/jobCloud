@@ -21,10 +21,6 @@ $(".link-del").click(function(){
 	$(".del_alert").fadeIn();
 });
 
-$(".add_user").click(function(){
-	$(".add_user_alert").fadeIn();
-});
-
 $(".del").click(function(){
 	$(".add_user_alert").fadeOut();
 });
