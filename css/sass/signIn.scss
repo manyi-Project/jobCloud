@@ -919,6 +919,7 @@ html,body{
         font-size: 14px;
         li{
             width: 227px;
+            height: 350px;
             margin-right: 37px;
             margin-bottom: 40px;
         }
@@ -929,15 +930,18 @@ html,body{
         background-color: #F4F4F4;
     }
     .pirce{
+
         margin: 14px 0;
     }
     .UnitPrice{
-        display: none;
         color: #df002c;
     }
     .setprice{
         width: 47px;
         border-bottom: 1px solid #39393c;
+    }
+    .pric{
+        display: none;
     }
     .pric:after{
         content: '元';
@@ -950,12 +954,12 @@ html,body{
         height: 32px;
         line-height: 32px;
         text-align: center;
-        background: #6D9EE1;
+        background: #C0C2C8;
         @include bdr-radius(2px);
         color: #FFFFFF;
     }
     .setActive{
-        background-color: #C0C2C8;
+        background-color: #6D9EE1;
     }
     .comp{
         margin-top: 30px;

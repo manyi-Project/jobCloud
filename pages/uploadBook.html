@@ -96,14 +96,14 @@
 							<span class="avctiveVal">请选择年级</span>
 							<ul class="dropdown">
 								<li class="arrow"></li>
-								<li class="li">Twitter</li>
-								<li class="li">Github</li>
-								<li class="li">Facebook</li>
-								<li class="li">Facebook</li>
-								<li class="li">Facebook</li>
-								<li class="li">Facebook</li>
-								<li class="li">Facebook</li>
-								<li class="li">Facebook</li>
+								<li class="li" data-value="1">Twitter</li>
+								<li class="li" data-value="2">Github</li>
+								<li class="li" data-value="3">Facebook</li>
+								<li class="li" data-value="4">Facebook</li>
+								<li class="li" data-value="5">Facebook</li>
+								<li class="li" data-value="6">Facebook</li>
+								<li class="li" data-value="7">Facebook</li>
+								<li class="li" data-value="8">Facebook</li>
 							</ul>
 						</div>
 						<div id="dd2" class="wrapper-dropdown-2 fl" tabindex="1">
@@ -220,6 +220,8 @@
 					},
 					click:function(){
 						var optionValue = $(this).html();
+						var dataVal = $(this).attr("data-value");
+						$(".avctiveVal",that).attr("data-value",dataVal);
 						$(".avctiveVal",that).text(optionValue);
 					}
 				});
@@ -241,6 +243,8 @@
 			$('.wrapper-dropdown-2 .dropdown').slideUp(500);
 			$('.wrapper-dropdown-2').removeClass("active");
 		});
+
+		$("#dd1 .avctiveVal").attr("data-value");
 	})
 </script>
 </html>

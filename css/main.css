@@ -906,6 +906,7 @@ html, body {
   font-size: 14px; }
   .uploadBook .bookpage_ul li {
     width: 227px;
+    height: 350px;
     margin-right: 37px;
     margin-bottom: 40px; }
 
@@ -918,12 +919,14 @@ html, body {
   margin: 14px 0; }
 
 .uploadBook .UnitPrice {
-  display: none;
   color: #df002c; }
 
 .uploadBook .setprice {
   width: 47px;
   border-bottom: 1px solid #39393c; }
+
+.uploadBook .pric {
+  display: none; }
 
 .uploadBook .pric:after {
   content: '元';
@@ -936,14 +939,14 @@ html, body {
   height: 32px;
   line-height: 32px;
   text-align: center;
-  background: #6D9EE1;
+  background: #C0C2C8;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
   color: #FFFFFF; }
 
 .uploadBook .setActive {
-  background-color: #C0C2C8; }
+  background-color: #6D9EE1; }
 
 .uploadBook .comp {
   margin-top: 30px; }

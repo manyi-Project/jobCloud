@@ -81,7 +81,7 @@
 						<div class="pirce clearself">
 							<span class="fl">第一页</span>
 							<span class="fr">单价：<span class="UnitPrice">&yen;<span>1.2</span>元</span>
-													<span class="pric"><input class="setprice" type="text"/></span>
+													<span class="pric"><input class="setprice" value="1.2" type="text"/></span>
 							</span>
 						</div>
 						<div class="set">设置价格</div>
@@ -175,10 +175,17 @@
 		$(this).parent().prev().find("span").html($(this).val())
 	});
 	$(".set").click(function(){
-		$(this).addClass("setActive");
-		$(this).prev().find(".pric").hide();
-		$(this).prev().find(".UnitPrice").show();
-	})
+		if ($(this).html()=="设置价格"){
+			$(this).addClass("setActive").html("确定");
+			$(this).prev().find(".pric").show();
+			$(this).prev().find(".UnitPrice").hide();
+		}else{
+			$(this).removeClass("setActive").html("设置价格");
+			$(this).prev().find(".pric").hide();
+			$(this).prev().find(".UnitPrice").show();
+		}
+
+	});
 	function DropDown(el) {
 		this.dd = el;
 		this.initEvents();
