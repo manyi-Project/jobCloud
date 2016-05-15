@@ -254,6 +254,7 @@
 			var thisInpt = $(this).siblings("input[type='checkbox']");
 			$(this).toggleClass("cur");
 			$(".checkbox-con .checkbox").not($(this)).removeClass("cur");
+			$(".checkbox-con .ipt-hide").prop("checked",true);
 			if($(this).hasClass("cur")){
 				thisInpt.prop("checked",true);
 			}else{
