@@ -133,13 +133,13 @@
 					</tr>
 				</table>
 			</div>
-			<div class="pagination clearself">
-				<a href="javascript:;" class="fr">尾页</a>
-				<a href="javascript:;" class="fr">下一页</a>
-				<a href="javascript:;" class="fr">2</a>
-				<a href="javascript:;" class="fr">1</a>
-				<a href="javascript:;" class="fr">上一页</a>
-				<a href="javascript:;" class="pagination-active fr">首页</a>
+			<div class="pagination clearself fr">
+				<a href="javascript:;" class="pagination-active">首页</a>
+				<a href="javascript:;">上一页</a>
+				<a href="javascript:;">1</a>
+				<a href="javascript:;">2</a>
+				<a href="javascript:;">下一页</a>
+				<a href="javascript:;">尾页</a>
 			</div>
 			<div class="copyright">
 				<p>版权信息</p>
@@ -156,7 +156,7 @@
 							<span>
 							    <input type="checkbox" hidden  class="ipt-hide">
 								<label class="checkbox"></label>
-								《开心蛙状元作业》
+								《开心蛙》
 							</span>
 						</div>
 						<div class="checkbox-con">
@@ -170,14 +170,14 @@
 							<span>
 							    <input type="checkbox" hidden  class="ipt-hide">
 								<label class="checkbox"></label>
-								《开心蛙状元作业》
+								《开心蛙作业》
 							</span>
 						</div>
 						<div class="checkbox-con">
 							<span>
 							    <input type="checkbox" hidden  class="ipt-hide">
 								<label class="checkbox"></label>
-								《开心蛙状元作业》
+								《状元作业》
 							</span>
 						</div>
 						<div id="next" class="submit">
@@ -218,10 +218,10 @@
 	DropDown.prototype = {
 		initEvents : function() {
 			var obj = this;
-			obj.dd.on('click', function(event){
+			obj.dd.on("click",function(event){
 				var that = this;
 				$(that).addClass("active");
-				$(".li",that).on({
+				$(".li",that).off().on({
 					mouseover:function(){
 						$(this).addClass("liActive");
 					},
@@ -237,7 +237,7 @@
 				$(that).siblings().find(".dropdown").slideUp("fast",function(){
 					$(that).siblings().removeClass("active");
 				});
-				event.stopPropagation(500);
+				event.stopPropagation();
 			});
 		}
 	};
@@ -250,14 +250,14 @@
 			$('.wrapper-dropdown-2 .dropdown').slideUp(500);
 			$('.wrapper-dropdown-2').removeClass("active");
 		});
-
 		$('.checkbox').on('click',function(){
-			if($(this).siblings("input[type='checkbox']").prop("checked")){
-				$(this).removeClass('cur');
-				$(this).siblings("input[type='checkbox']").prop("checked",false);
+			var thisInpt = $(this).siblings("input[type='checkbox']");
+			$(this).toggleClass("cur");
+			$(".checkbox-con .checkbox").not($(this)).removeClass("cur");
+			if($(this).hasClass("cur")){
+				thisInpt.prop("checked",true);
 			}else{
-				$(this).addClass('cur');
-				$(this).siblings("input[type='checkbox']").prop("checked",true);
+				thisInpt.prop("checked",false);
 			}
 		});
 	});

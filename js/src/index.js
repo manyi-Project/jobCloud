@@ -2,7 +2,7 @@
  * Created by Administrator on 2016/4/28 0028.
  */
 var $navbarOut = $(".navbar_out");
-$navbarOut.find('.navbar_con').hide();
+//$navbarOut.find('.navbar_con').hide();
 $navbarOut.find('h3').click(function () {
 	var $tipsThis = $(".tips_icon",this);
 	var next = $(this).nextAll();
