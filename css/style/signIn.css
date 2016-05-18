@@ -336,7 +336,7 @@ html, body {
 
 .bookList .wrapper-dropdown-2 {
   position: relative;
-  width: 110px;
+  width: 120px;
   margin-right: 50px;
   padding: 6px 11px;
   background-color: #c0c2c8;
@@ -738,7 +738,7 @@ html, body {
 
 .uploadBook .wrapper-dropdown-2 {
   position: relative;
-  width: 110px;
+  width: 120px;
   margin-right: 20px;
   padding: 6px 11px;
   background-color: #c0c2c8;
