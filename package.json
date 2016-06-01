@@ -1,0 +1,23 @@
+{
+  "name": "wshop",
+  "version": "1.0.0",
+  "description": "tea_mobile",
+  "main": "main.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "author": "orangking",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-px3rem": "^0.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "gulp-uglify": "^1.5.3"
+  }
+}
