@@ -1,0 +1,21 @@
+@mixin background($url,$cover:cover){
+	background: url($url);
+	background-position: inherit;
+	background-repeat: no-repeat;
+	-webkit-background-size: $cover;
+	background-size: $cover;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$url,sizingMethod='scale');
+	-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src=#{$url},sizingMethod='scale')";
+}
+@mixin square($def:100%){
+	width: $def;
+	height: $def;
+}
+@mixin lineHight($def:100%){
+	line-height: $def;
+}
+@mixin bdr-radius($radius:10px){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
