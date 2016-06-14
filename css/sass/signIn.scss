@@ -862,6 +862,7 @@ html,body{
         width: 405px;
         height: 270px;
         font-size: 14px;
+        vertical-align: top;
         color: #6F7074;
         text-align: left;
         h3{
@@ -869,6 +870,13 @@ html,body{
             color: #3C3E49;
             margin-bottom: 14px;
         }
+        p{
+            height: 170px;
+            overflow: hidden;
+        }
+    }
+    .setAllPirce{
+        height: 30px;
     }
     .setPrick_out{
         padding: 0 19px;

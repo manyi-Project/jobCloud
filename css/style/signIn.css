@@ -848,12 +848,19 @@ html, body {
   width: 405px;
   height: 270px;
   font-size: 14px;
+  vertical-align: top;
   color: #6F7074;
   text-align: left; }
   .uploadBook .book_des h3 {
     font-size: 16px;
     color: #3C3E49;
     margin-bottom: 14px; }
+  .uploadBook .book_des p {
+    height: 170px;
+    overflow: hidden; }
+
+.uploadBook .setAllPirce {
+  height: 30px; }
 
 .uploadBook .setPrick_out {
   padding: 0 19px; }
