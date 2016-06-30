@@ -910,7 +910,9 @@ html, body {
 .uploadBook .bookpage_ul {
   width: 1060px;
   color: #3C3E49;
-  font-size: 14px; }
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0; }
   .uploadBook .bookpage_ul li {
     width: 227px;
     height: 350px;
