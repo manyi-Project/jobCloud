@@ -50,6 +50,13 @@ html,body{
     color: #3C3E49;
     font-size: 14px;
 }
+.copyright2{
+    width: 100%;
+    text-align: center;
+    color: #3C3E49;
+    font-size: 14px;
+    padding-top: 20px;
+}
     //登录样式
 #signIn{
     @include square();
@@ -842,7 +849,7 @@ html,body{
         width: 78px;
     }
     .book_box_out{
-        height: 270px;
+        //height: 270px;
         margin-top: 75px;
         text-align: center;
         font-size: 0;
@@ -860,7 +867,7 @@ html,body{
     }
     .book_des{
         width: 405px;
-        height: 270px;
+        //height: 270px;
         font-size: 14px;
         vertical-align: top;
         color: #6F7074;
@@ -876,16 +883,14 @@ html,body{
         }
     }
     .setAllPirce{
-        height: 30px;
+        //height: 30px;
     }
     .setPrick_out{
         padding: 0 19px;
     }
-    .setPrice_title{
+    .setPrice_line{
         border-bottom: 1px solid #6D9EE1;
-        font-size: 14px;
-        color: #3C3E49;
-        padding-bottom: 14px;
+        margin-top: 50px;
         span:before{
             content: '';
             width: 8px;
@@ -944,7 +949,7 @@ html,body{
         margin: 14px 0;
     }
     .UnitPrice{
-        color: #df002c;
+        color: #385ba3;
     }
     .setprice{
         width: 47px;
@@ -959,9 +964,9 @@ html,body{
         font-size: 14px;
     }
     .set{
-        float: right;
         width: 95px;
         height: 32px;
+        margin-top: 20px;
         line-height: 32px;
         text-align: center;
         background: #C0C2C8;
@@ -973,5 +978,18 @@ html,body{
     }
     .comp{
         margin-top: 30px;
+    }
+    .sPagePirce{
+        margin-top: 44px;
+        font-size: 16px;
+        color: #3c3e49;
+    }
+    .sPages{
+        font-size: 14px;
+        color: #6F7074;
+        margin-top: 24px;
+    }
+    .wangcheng{
+        margin-top: 24px;
     }
 }
