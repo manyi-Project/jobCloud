@@ -48,13 +48,6 @@ html, body {
   color: #3C3E49;
   font-size: 14px; }
 
-.copyright2 {
-  width: 100%;
-  text-align: center;
-  color: #3C3E49;
-  font-size: 14px;
-  padding-top: 20px; }
-
 #signIn {
   width: 100%;
   height: 100%;
@@ -848,12 +841,12 @@ html, body {
   background-color: #d8d8d8; }
 
 .uploadBook .book_box3 {
-  margin: 0 16px 0 40px; }
+  margin: 0 16px 0 40px;
+  vertical-align: top; }
 
 .uploadBook .book_des {
   width: 405px;
   font-size: 14px;
-  vertical-align: top;
   color: #6F7074;
   text-align: left; }
   .uploadBook .book_des h3 {
@@ -867,10 +860,12 @@ html, body {
 .uploadBook .setPrick_out {
   padding: 0 19px; }
 
-.uploadBook .setPrice_line {
+.uploadBook .setPrice_title {
   border-bottom: 1px solid #6D9EE1;
-  margin-top: 50px; }
-  .uploadBook .setPrice_line span:before {
+  font-size: 14px;
+  color: #3C3E49;
+  padding-bottom: 14px; }
+  .uploadBook .setPrice_title span:before {
     content: '';
     width: 8px;
     height: 8px;
@@ -910,9 +905,7 @@ html, body {
 .uploadBook .bookpage_ul {
   width: 1060px;
   color: #3C3E49;
-  text-align: center;
-  font-size: 18px;
-  padding: 20px 0; }
+  font-size: 14px; }
   .uploadBook .bookpage_ul li {
     width: 227px;
     height: 350px;
@@ -942,7 +935,7 @@ html, body {
   color: #39393c;
   font-size: 14px; }
 
-.uploadBook .set {
+.uploadBook .set, .uploadBook .wangcheng {
   width: 95px;
   height: 32px;
   margin-top: 20px;
@@ -968,9 +961,6 @@ html, body {
 .uploadBook .sPages {
   font-size: 14px;
   color: #6F7074;
-  margin-top: 24px; }
-
-.uploadBook .wangcheng {
   margin-top: 24px; }
 
 /*# sourceMappingURL=maps/main.css.map */

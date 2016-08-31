@@ -50,13 +50,6 @@ html,body{
     color: #3C3E49;
     font-size: 14px;
 }
-.copyright2{
-    width: 100%;
-    text-align: center;
-    color: #3C3E49;
-    font-size: 14px;
-    padding-top: 20px;
-}
     //登录样式
 #signIn{
     @include square();
@@ -849,7 +842,6 @@ html,body{
         width: 78px;
     }
     .book_box_out{
-        //height: 270px;
         margin-top: 75px;
         text-align: center;
         font-size: 0;
@@ -864,12 +856,11 @@ html,body{
     }
     .book_box3{
         margin: 0 16px 0 40px;
+        vertical-align: top;
     }
     .book_des{
         width: 405px;
-        //height: 270px;
         font-size: 14px;
-        vertical-align: top;
         color: #6F7074;
         text-align: left;
         h3{
@@ -882,15 +873,14 @@ html,body{
             overflow: hidden;
         }
     }
-    .setAllPirce{
-        //height: 30px;
-    }
     .setPrick_out{
         padding: 0 19px;
     }
-    .setPrice_line{
+    .setPrice_title{
         border-bottom: 1px solid #6D9EE1;
-        margin-top: 50px;
+        font-size: 14px;
+        color: #3C3E49;
+        padding-bottom: 14px;
         span:before{
             content: '';
             width: 8px;
@@ -929,9 +919,7 @@ html,body{
     .bookpage_ul{
         width: 1060px;
         color: #3C3E49;
-        text-align: center;
-        font-size: 18px;
-	    padding: 20px 0;
+        font-size: 14px;
         li{
             width: 227px;
             height: 350px;
@@ -963,14 +951,16 @@ html,body{
         color: #39393c;
         font-size: 14px;
     }
-    .set{
+    .set,.wangcheng{
         width: 95px;
         height: 32px;
         margin-top: 20px;
         line-height: 32px;
         text-align: center;
         background: #C0C2C8;
-        @include bdr-radius(2px);
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
         color: #FFFFFF;
     }
     .setActive{
@@ -987,9 +977,6 @@ html,body{
     .sPages{
         font-size: 14px;
         color: #6F7074;
-        margin-top: 24px;
-    }
-    .wangcheng{
         margin-top: 24px;
     }
 }
